@@ -13,4 +13,5 @@ This is my personal scratchpad to learn **Python**, while walking through this n
 * [Functions](Functions.md)
 * [Generator-functions and Generator-iterators](Generators.md)
 * [List Comprehentions](ListComprehentions.md)
+* [Lambdas](Lambdas.md)
 * [Modules and Packages](ModulesAndPackages.md)
