@@ -12,6 +12,7 @@ myfloat = float(7)
 True, False
 ```
 ## *Strings*
+Single quotes and double quotes are supported. Single quotes may cause trouble with apostrophe.
 ```
 mystring = 'hello'
 mystring = "hello"
@@ -32,7 +33,7 @@ x_list = [x] * 10   # [x,x,..,x]
 ```
 all_numbers = odd_numbers + even_numbers
 ```
-* elements can be added using append()
+* elements can be added using **append()**
 ```
 mylist.append(1)
 ```
@@ -268,7 +269,7 @@ print(cars[4:6])
 
 You can also use loc and iloc to perform just about any data selection operation.  
 * **loc** is **label-based**, which means that you have to specify rows and columns based on their row and column labels.
-* **iloc** is **integer index based**, so you have to specify rows and columns by their integer index.
+* **iloc** is **integer index based**, so you have to specify rows and columns by their zero-based integer index.
 ```
 # Import cars data
 import pandas as pd
