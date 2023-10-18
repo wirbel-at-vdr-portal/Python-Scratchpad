@@ -73,4 +73,32 @@ d = {'key1': 1, 'key2': 2, 'arg1': 100, 'arg2': 200}
 foo(**d)
 ```
 > [!NOTE]
-> A parameter prefixed with ** can only be defined at the end of the parameter list. 
+> A parameter prefixed with ** can only be defined at the end of the parameter list.
+
+#### Example
+
+The foo and bar functions receive a variable amount of arguments (3 or more).  
+The foo function returns the amount of extra arguments received.  
+The bar function returns True if the argument with the keyword magicnumber is worth 7, and False otherwise.
+
+```
+def foo(a, b, c, *args):
+    return len(list(args));
+
+def bar(a, b, c, **kwargs):
+    if kwargs.get("magicnumber") == 7:
+        return True
+    else:
+        return False;
+
+
+# test code
+if foo(1, 2, 3, 4) == 1:
+    print("Good.")
+if foo(1, 2, 3, 4, 5) == 2:
+    print("Better.")
+if bar(1, 2, 3, magicnumber=6) == False:
+    print("Great.")
+if bar(1, 2, 3, magicnumber=7) == True:
+    print("Awesome!")
+```
