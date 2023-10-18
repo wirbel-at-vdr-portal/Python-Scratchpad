@@ -1,9 +1,10 @@
 # Modules and Packages
 
 Python code needs to be structured, as C++ would do in .cpp files and headers.  
-A single file is called a Module, a set of one or more Modules called a Package.
+A single file is called a Module, a set of one or more Modules called a Package. The module initializes it's internal variables once during load of module.
 
-## Using a Module
+## Modules
+#### Using a Module
 
 Modules are used, by making them available.
 ```
@@ -37,7 +38,7 @@ else:
     import draw_textual as draw
 ```
 
-## Selecting the main() function
+#### Selecting the main() function
 ```
 import (..)
 
@@ -52,7 +53,7 @@ if __name__ == '__main__':
     main()
 ```
 
-## Finding function in a Module
+#### Finding function in a Module
 To find members of a module, one can use the **dir()** function, after importing the module.
 
 ```
@@ -62,4 +63,43 @@ for fct in dir(re):
     if "find" in fct:
         find_members.append(fct)
 print(find_members)
+```
+
+Also, the **help()** command may be used.
+```
+import urllib
+dir(urllib)
+(..)
+help(urllib.urlopen)
+```
+
+#### Extending the python module search path
+To be able to find modules an Environment Variable called **PYTHONPATH** is used.
+```
+PYTHONPATH="/foo python game.py"
+```
+
+Alternativly, one may use **sys.path.append()**.
+```
+sys.path.append("/foo")
+```
+
+## Modules and Packages delivered with Python
+[https://docs.python.org/3/library/](https://docs.python.org/3/library/)
+
+## Packages
+
+A package is actually both, an Namespace *and* an Folder on disk. It may contain packages and/or modules.
+
+As a minimum, it needs to contain the file **__init__.py**, which indicates this as a Python package. The file __init__.py might be empty.
+Packages are imported similar like a module.
+
+If we create a directory called foo, which marks the package name,
+we can then create a module inside that package called bar.
+Then we add the __init__.py file inside the foo directory.
+
+To use the module bar, we can import it in two ways:
+```
+import foo.bar
+from foo import bar
 ```
