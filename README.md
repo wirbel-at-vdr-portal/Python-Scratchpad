@@ -16,3 +16,4 @@ This is my personal scratchpad to learn **Python**, while walking through this n
 * [Lambdas](Lambdas.md)
 * [Modules and Packages](ModulesAndPackages.md)
 * [Regular Expressions](regexp.md)
+* [Exceptions](Exceptions.md)
