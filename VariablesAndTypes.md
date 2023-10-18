@@ -36,9 +36,78 @@ all_numbers = odd_numbers + even_numbers
 ```
 mylist.append(1)
 ```
+* print a list member
+```
+print(mylist[0])
+```
+* printing a list
+```
+print(all_numbers)
+# [1, 3, 5, 7, 2, 4, 6, 8]
+```
+* iterate over list
+```
+for x in mylist:
+    print(x)
+```
+## *Dictionaries*
+Similar to lists/array, but works with keys and values instead of indexes.  
+Also similar to std::map.
+```
+phonebook = {}
+phonebook["John"] = 938477566
+phonebook["Jack"] = 938377264
+phonebook["Jill"] = 947662781
+
+# or ..
+# phonebook = {
+#     "John" : 938477566,
+#     "Jack" : 938377264,
+#     "Jill" : 947662781
+#     }
+
+print("Jacks number is %d." % phonebook["Jack"])  << Jacks number is 938377264.
+
+for name, number in phonebook.items():                
+    print("Phone number of %s is %d" % (name, number))
+
+# delete an entry 
+del phonebook["John"]
+
+# add entry
+phonebook["Jake"] = 938273443
+
+# alternative zu del
+phonebook.pop("Jake")
+```
+
+## *Objects*
+```
+x = object()
+```
+
+## *Classes*
+```
+class MyClass:                                      
+    myString = "blah"
+
+    # like a constructor, called once on create instance
+    # note the usage of 'self'                               
+    def __init__(self, aString):
+        self.myString = aString
+
+    def function(self):                             
+        print("This is a message inside the class.")
+
+# now working with it
+m = MyClass()
+m.function()
+```
+
+
 ## *Numpy Arrays*
-Numpy arrays are that they are fast, easy to work with, and give users the opportunity to perform calculations across entire arrays.  
-Numpy Arrays require the use of the numpy package.
+Numpy arrays are that they are fast, easy to work with, and give users the opportunity to perform calculations
+across entire arrays. Numpy Arrays require the use of the numpy package.
 
 ```
 # Create 2 new lists height and weight
