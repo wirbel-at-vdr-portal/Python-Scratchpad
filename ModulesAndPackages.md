@@ -91,7 +91,11 @@ sys.path.append("/foo")
 
 A package is actually both, an Namespace *and* an Folder on disk. It may contain packages and/or modules.
 
-As a minimum, it needs to contain the file **__init__.py**, which indicates this as a Python package. The file __init__.py might be empty.
+As a minimum, it needs to contain the file
+```
+__init__.py
+```
+, which indicates this as a Python package. This file might be even empty.
 Packages are imported similar like a module.
 
 If we create a directory called foo, which marks the package name,
