@@ -11,6 +11,24 @@ Note the missing curly braces.
              return a + b
 ```
 
+## Partial Functions
+
+A so called **partial function** calls an existing function with less args,
+providing fixed arguments beginning from left for the existing function.  
+The returned value from **partial** is actually a function object.
+```
+from functools import partial
+ 
+def f(a, b, c, x):
+    return 1000*a + 100*b + 10*c + x
+ 
+# A partial function that calls f with a,b,c as fixed args and returns a new function obj
+g = partial(f, 3, 1, 4)
+ 
+print(g(5))
+# 3145
+```
+
 ## Variadic arguments
 
 Sometimes, you don't know exactly the number of function arguments while coding.  
