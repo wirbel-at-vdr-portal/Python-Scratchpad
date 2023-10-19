@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # Generator functions and generator iterators
 If looping over large lists/arrays, not always it is needed to hold the complete array in memory. This is, when generators come into play.
 Instead of holding a complete array in memory, a special function is used, which initializes it's internal state on first call and subsequently returns the next value on request.
@@ -34,3 +36,5 @@ Instead a **generator-iterator** object is returned; this conforms to the iterat
     ```
                  return
     ```
+
+[back to index](README.md)
