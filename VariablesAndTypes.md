@@ -56,7 +56,7 @@ for x in mylist:
     print(x)
 ```
 
-## Sets
+## *Sets*
 **Sets** can be understood as Lists with unique and constant items.  
 Sets are
 * a *collection of unique items* - **no duplicates**!
@@ -101,6 +101,33 @@ aSet = {"apple", "banana", "cherry"}
     # {'a', 'c'}
 ```
 * [set methods](https://www.w3schools.com/python/python_sets_methods.asp)
+
+## *Tuples*
+**Tuples** can be understood as ordered Lists with constant items.  
+Sets are
+* a *collection of items*
+* *ordered*
+* *indexed* - zero based index
+* *unchangeable*  
+> [!NOTE]
+> You can *add* or *remove* items, but not *change* items in a set.
+```
+    aTuple = (1,3,5,7)
+```
+* length of tuple
+```
+    len(aTuple)
+```
+* element access, negative index is from end
+```
+    aTuple[1]
+    # 3
+
+    aTuple[1:3]
+    # (1,3)
+```
+* [tuple methods](https://www.w3schools.com/python/python_tuples_methods.asp)
+
 
 ## *Dictionaries*
 Similar to lists/array, but works with keys and values instead of indexes.  
