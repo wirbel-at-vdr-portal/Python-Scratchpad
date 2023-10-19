@@ -38,7 +38,7 @@ def my_function():
 myCar = Vehicle("otto", "yellow", "van",500.0)
 ```
 
-* **help()**, prints some useful hints on the usage of an object
+* **help(obj)**, prints some useful hints on the usage of an object
 ```
     help(Vehicle)
 
@@ -77,7 +77,7 @@ myCar = Vehicle("otto", "yellow", "van",500.0)
         use triple single or double quotes to add an description.
  
 ```  
-* **type()**, returns the type of an object as string.
+* **type(obj)**, returns the type of an object as string.
 ```
     print(type(Vehicle))
     print(type(myCar))
@@ -86,7 +86,7 @@ myCar = Vehicle("otto", "yellow", "van",500.0)
     # <class '__main__.Vehicle'>
     # <class 'float'> 
 ```
-* **dir()**, returns a list of names comprising the attributes of the given object, and of attributes reachable from it.
+* **dir(obj)**, returns a list of names comprising the attributes of the given object, and of attributes reachable from it.
 ```
     for s in dir(Vehicle):
         print(s)
@@ -122,7 +122,7 @@ myCar = Vehicle("otto", "yellow", "van",500.0)
     # name
     # value
 ```
-* **hasattr(obj, name)**  Return whether the object has an attribute with the given name.
+* **hasattr(obj, name)**  Return whether the object has an attribute with the given string name.
 ```
    hasattr(myCar, "description")
    # True
@@ -130,5 +130,24 @@ myCar = Vehicle("otto", "yellow", "van",500.0)
    hasattr(myCar, "Description")
    # False
 ```
+* **id(obj)** returns the *identity* of the object.  
+The identity of an object is an integer, which is guaranteed to be unique and constant for this object during its lifetime. Two objects with non-overlapping lifetimes may have the same id() value.
+```
+   print(id(myCar))
+   # 139775667641928
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [back to index](README.md)
