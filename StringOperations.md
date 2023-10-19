@@ -10,6 +10,11 @@ print("Float: %f" % myfloat)
 print("Integer: %d" % myint)
 print("%s is %d years old." % (name, age))
 ```
+* casting to string
+```
+x = str(3)
+# x will be '3'
+```
 * print a list using the 'repr' method
 ```
 mylist = [1,2,3]
