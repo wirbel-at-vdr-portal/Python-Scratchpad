@@ -42,6 +42,7 @@ Functions may contain local functions. In C/C++ this is not allowed in such way,
 But in Python we can, they are called **Nested Functions**.
 * *a **Nested Function** refers to a function that is defined within another function's body.*  
 Nested functions are able to access variables of it's enclosing scope, but readonly.
+* using the **nonlocal** keyword inside the **Nested Function**, together with the name of it's parent funcs variable name, the **Nested Function** gains also write access to this variable
 
 ```
 def outer_func():
