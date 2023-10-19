@@ -20,6 +20,8 @@ mystring = 'hello'
 mystring = "hello"
 ```
 ## *Lists*
+Lists are arrays, for which all items have the same type.
+
 * empty list
 ```
 mylist = []
@@ -53,6 +55,53 @@ print(all_numbers)
 for x in mylist:
     print(x)
 ```
+
+## Sets
+**Sets** can be understood as Lists with unique and constant items.  
+Sets are
+* a *collection of unique items* - **no duplicates**!
+* *unordered*
+* *unindexed* - no access by index
+* *unchangeable*  
+> [!NOTE]
+> You can *add* or *remove* items, but not *change* items in a set.
+```
+aSet = {"apple", "banana", "cherry"}
+```
+
+* length of a set
+```
+    len(aSet)
+```
+* looping through a set
+```
+    for x in aSet:
+        print(x)
+```
+* check if something is in a set
+```
+    if x in aSet:
+        # do something
+```
+* add/remove items using its methods
+```
+    aSet.add("orange")
+    aSet.remove("banana")
+```
+* union() and intersection() return a new set:
+```
+    set1 = {"a", "b" , "c"}
+    set2 = {"a", "c", "e"}
+
+    set3 = set1.union(set2)
+    print(set3)
+    # {'e', 'c', 'a', 'b'}
+
+    print(set1.intersection(set2))
+    # {'a', 'c'}
+```
+* [set methods](https://www.w3schools.com/python/python_sets_methods.asp)
+
 ## *Dictionaries*
 Similar to lists/array, but works with keys and values instead of indexes.  
 Also similar to std::map.
