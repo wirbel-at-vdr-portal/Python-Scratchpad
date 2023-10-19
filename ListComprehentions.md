@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # List Comprehensions
 
 ***List comprehensions** offer a short syntax to create a new list based on the values of an existing list.  
@@ -34,3 +36,5 @@ The returned list is made of the existing list (*iterable*).
 For each member of *iterable*, for which *condition == True*:
 * item is resolved with it's value inside *expression*
 * *expression* evaluated and the result put to the list
+
+[back to index](README.md)
