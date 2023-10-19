@@ -15,11 +15,28 @@ print(x)
 ```
 
 ## *Numbers*
-2 types of numbers, integer and float:
+integer, float and complex:
 ```
 myint = 7
 myfloat = 7.0
 myfloat = float(7)
+```
+
+```
+import cmath
+
+x = 3 + 1j
+
+print("type(x) = " + str(type(x)))
+print("abs(x) = " + str(abs(x)))
+print("phase(x) = " + str(cmath.phase(x)*180.0/3.1415) + "deg")
+print("x.real = " + str(x.real))
+print("x.imag = " + str(x.imag))
+# type(x) = <class 'complex'>
+# abs(x) = 3.1622776601683795
+# phase(x) = 18.43549253267407deg
+# x.real = 3.0
+# x.imag = 1.0
 ```
 ## *Boolean*
 ```
