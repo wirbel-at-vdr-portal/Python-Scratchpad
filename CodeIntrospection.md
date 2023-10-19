@@ -172,14 +172,15 @@ class A_subclass(The_superclass):
 * **isinstance(obj, type)** returns True if the specified object is of the specified type
     * obj - an object
     * type - A type or a class 
-
 * the **\_\_doc__** attribute
 Each Python object (functions, classes, variables,...) may provide (if programmer has filled it) a
 short documentation which describes its features.  
 You can access it with commands like **print(myobject.\_\_doc__)**. You can provide a documentation for
 your own objects (functions for example) in the body of their definition as a string surrounded by three double-quotes,  
 see my_function() as an example.
-
-
+* the **\_\_name__** attribute
+The **\_\_name__** attribute returns the name of the module.  
+By default, the name of the file (excluding the extension .py) is the value of this attribute.  
+In the same way, it gives the name of your custom module e.g. calc module will return 'calc'.
 
 [back to index](README.md)
