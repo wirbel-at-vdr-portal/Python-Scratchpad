@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # **Variables and Types**
 
 ## *Numbers*
@@ -288,3 +290,5 @@ print(cars.loc[['AUS', 'EG']])
 # AUS           731  Australia        False
 # EG             45      Egypt         Tru
 ```
+
+[back to index](README.md)
