@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # Working with strings
 
 * printing strings and variables
@@ -69,3 +71,5 @@ mystring.endswith("asdf")
 mystring.split(" ")
 # ['Hello', 'world!']
 ```
+
+[back to index](README.md)
