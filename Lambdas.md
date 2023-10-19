@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # Lambda functions
 
 ***Lambda functions** are short inline functions without a name.*
@@ -31,3 +33,5 @@ print(c)
 
 *inputs* is a comma separated list of arguments  
 *output* is the return value.
+
+[back to index](README.md)
