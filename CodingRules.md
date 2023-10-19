@@ -25,5 +25,6 @@
 
 * **function arguments** are comma-separated.
 
+* **Variable names** are case-sensitive.
 
 [back to index](README.md)
