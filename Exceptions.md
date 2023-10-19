@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # Exception Handling
 
 Well, I have so far never seen a program without possible mistakes and errors.  
@@ -64,3 +66,5 @@ Capturing just the expected error could look like this
 ```
 
 Capturing/Handling Exceptions is in any programming language so far a loooong and difficult topic, [pls read yourselves](https://docs.python.org/3/tutorial/errors.html#handling-exceptions).
+
+[back to index](README.md)
