@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # Coding Rules
 
 * **No semicolon at end of line.**
@@ -21,3 +23,6 @@
 ```
 
 * **function arguments** are comma-separated.
+
+
+[back to index](README.md)
