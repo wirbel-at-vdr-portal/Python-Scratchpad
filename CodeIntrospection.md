@@ -138,19 +138,23 @@ The identity of an object is an integer, which is guaranteed to be unique and co
 ```
 * **repr(obj)** returns a printable representation of the object by converting that object to a string.  
 > [!NOTE]
-> **repr()** calls the objects **\_\_repr__()** method internally.
+> **repr()** calls the objects **\_\_repr__()** method internally.  
 > As we didn't implement it here, repr() doesn't show too much.
 ```
    print(repr(myCar))
    # <__main__.Vehicle object at 0x7f200f049ba8>
 ```
+* **callable(obj)** returns if the object is callable. 
+> [!NOTE]
+> A callable is any object that you can call using a pair of parentheses and, optionally, a series of arguments.   
+> Functions, classes, and methods are all common examples of callables in Python.
+```
+    print(callable(myCar))
+    # False
 
-
-
-
-
-
-
+    print(callable(Vehicle))
+    #True
+```
 
 
 
