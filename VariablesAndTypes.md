@@ -4,6 +4,15 @@
 
 ## The *global* keyword
 Variables defined with **global** belong to the global scope, even if defined in function.
+```
+def myfunc():
+  global x
+  x = 5
+
+myfunc()
+print(x)
+# 5
+```
 
 ## *Numbers*
 2 types of numbers, integer and float:
