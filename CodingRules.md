@@ -13,7 +13,8 @@
 
 * **Code Blocks** (if/else, loops, functions, ..) are formed by **indent**, instead of curly braces. 
 
-* **Comments** are done with '#'.
+* **Comments** are done with '#'.   
+  Comments can be placed at the end of a line, and Python will ignore the rest of the line
 
 * **multiple Assignments** in a single row are possible:
 ```
