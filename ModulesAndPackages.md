@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # Modules and Packages
 
 Python code needs to be structured, as C++ would do in .cpp files and headers.  
@@ -107,3 +109,5 @@ To use the module bar, we can import it in two ways:
 import foo.bar
 from foo import bar
 ```
+
+[back to index](README.md)
