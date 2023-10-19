@@ -136,6 +136,14 @@ The identity of an object is an integer, which is guaranteed to be unique and co
    print(id(myCar))
    # 139775667641928
 ```
+* **repr(obj)** returns a printable representation of the object by converting that object to a string.  
+> [!NOTE]
+> **repr()** calls the objects **\_\_repr__()** method internally.
+> As we didn't implement it here, repr() doesn't show too much.
+```
+   print(repr(myCar))
+   # <__main__.Vehicle object at 0x7f200f049ba8>
+```
 
 
 
