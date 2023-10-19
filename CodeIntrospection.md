@@ -122,6 +122,13 @@ myCar = Vehicle("otto", "yellow", "van",500.0)
     # name
     # value
 ```
-* **hasattr(obj, name, /)**  Return whether the object has an attribute with the given name.
+* **hasattr(obj, name)**  Return whether the object has an attribute with the given name.
+```
+   hasattr(myCar, "description")
+   # True
+
+   hasattr(myCar, "Description")
+   # False
+```
 
 [back to index](README.md)
