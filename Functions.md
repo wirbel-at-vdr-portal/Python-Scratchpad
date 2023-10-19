@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # Functions
 
 Functions/Methods are denoted by keyword **def**.  
@@ -102,3 +104,5 @@ if bar(1, 2, 3, magicnumber=6) == False:
 if bar(1, 2, 3, magicnumber=7) == True:
     print("Awesome!")
 ```
+
+[back to index](README.md)
