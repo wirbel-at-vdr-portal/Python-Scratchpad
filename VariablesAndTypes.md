@@ -2,6 +2,9 @@
 
 # **Variables and Types**
 
+## The *global* keyword
+Variables defined with **global** belong to the global scope, even if defined in function.
+
 ## *Numbers*
 2 types of numbers, integer and float:
 ```
