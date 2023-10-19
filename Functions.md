@@ -11,6 +11,12 @@ Note the missing curly braces.
              return a + b
 ```
 
+In Python functions are **first class objects**:
+* a function is an instance of the object type.
+* you can store a function in a variable or data structure.
+* you can pass a function as a parameter to another function.
+* you can return a function from a function.
+
 ## Partial Functions
 
 A so called **partial function** calls an existing function with less args,
@@ -27,6 +33,25 @@ g = partial(f, 3, 1, 4)
  
 print(g(5))
 # 3145
+```
+
+## Nested Functions
+
+Functions may contain local functions. In C/C++ this is not allowed in such way, except using Lambdas or doing using an operator() overload on a local struct.
+
+But in Python we can, they are called **Nested Functions**.
+* *a **Nested Function** refers to a function that is defined within another function's body.*  
+Nested functions are able to access variables of it's enclosing scope, but readonly.
+
+```
+def outer_func():
+    greeting = "Hello world"
+    def nested_func():
+        print(greeting)
+    # calling the nested func
+    nested_func()
+
+outer_func()
 ```
 
 ## Variadic arguments
