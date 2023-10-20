@@ -28,9 +28,25 @@ Use the **\_\_init__** function to initialize a class.
 Use the **\_\_str__** function to set, how to represent the class as a string.
 
 * **The self Parameter**  
-The first parameter of any function in the class is a reference to the current class instance.  
-Usually, it is called **self** in examples.
+The **first parameter** of any function in the class is **a reference to the current class instance**.  
+Usually, it is called **self** in Python examples.
+In C++, the current instance pointer is called **this**, in Lazarus and Delphi the current instance variable is also called **self**.  
+We could also rename the variable:
+```
+class MyClass:
+    myString = "blah"
 
-Some self explaining name should be used in any case.
+    # now i called it 'this'
+    def __init__(this, aString):
+        this.myString = aString
+
+    def function(this):
+        print("This is a message inside the class.")
+
+# now working with it
+m = MyClass("hello world")
+m.function()
+```
+
 
 [back to index](README.md)
