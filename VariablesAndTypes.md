@@ -85,6 +85,11 @@ all_numbers = odd_numbers + even_numbers
 ```
 mylist.append(1)
 ```
+* remove elements using **pop()**
+```
+# Delete the second element.
+mylist.pop(1)
+```
 * print a list member
 ```
 print(mylist[0])
