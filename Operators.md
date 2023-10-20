@@ -2,37 +2,71 @@
 
 # Operators
 
-* **arithmetic**
+* **arithmetic and bitwise**
 ```
-    # as usual
+    # add, subtract, multiply, divide
     + - * /
 
-    # modulo
+    # modular division
     %
 
-    # power of, ie. 2 ** 3 is 2^3
+    # exponent (power of), ie. 2 ** 3 is 2^3
     **
 
-    # as C/C++
-    +=
+    # floor
+    //
+
+    # bitwise and/or
+    & |
+
+    # bitwise not
+    ~
+
+    # xor
+    ^
+
+    # shift left, shift right
+    >> <<
+```
+* **assignment**
+```
+    # assign LHS
+    =
+
+    # see arithmetic
+    += -= *= /=
+    %=
+    **=
+    //=
+    &= |=
+    ^=
+    >>= <<=  
 ```
 
-* **logic and/or**
+* **logic**
 ```
+    # and/or
     a and b
     a or b
-```
-* **not** operator
-```
+
+    # not operator
     not a
 ```
-* **in** operator
+* **comparison**
+```
+    # equal and not equal
+    == !=
+
+    # greater, greater or equal, less, less or equal
+    > >= < <=
+```
+* **in** / **not in** operator, True, if value is (not) present in the object
 ```
     name = "John"
     if name in ["John", "Rick"]:
         print("Your name is either John or Rick.")
 ```
-* **is** operator, True, if same instance of object
+* **is** / **is not** operator, True, if (not) same instance of object  
 ```
     x = 2
     y = 2
