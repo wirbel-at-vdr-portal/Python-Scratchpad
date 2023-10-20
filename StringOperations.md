@@ -67,6 +67,12 @@ print(mystring[3:7])
 
 print(mystring[::-1])
 # '!dlrow olleH' - reverse string
+
+print(mystring[:5])
+# 'Hello'
+
+print(mystring[2:])
+# 'llo world'
 ```
 * **upper and lower case**
 ```
