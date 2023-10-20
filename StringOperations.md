@@ -83,6 +83,12 @@ mystring.startswith("Hello")
 mystring.endswith("asdf")
 # False
 ```
+* **Check if "free" is present in the following text**
+```
+txt = "The best things in life are free!"
+print("free" in txt)
+# True
+```
 * **Split string to a list, using a delimiter**
 ```
 mystring.split(" ")
