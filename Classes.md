@@ -3,20 +3,22 @@
 # Classes
 
 ```
-class MyClass:                                      
+class MyClass:
     myString = "blah"
 
     # like a constructor, called once on create instance
-    # note the usage of 'self'                               
+    # note the usage of 'self'
     def __init__(self, aString):
         self.myString = aString
 
-    def function(self):                             
+    def function(self):
         print("This is a message inside the class.")
 
 # now working with it
-m = MyClass()
+m = MyClass("hello world")
 m.function()
+
+# This is a message inside the class.
 ```
 
 * **The \_\_init__() Function**  
