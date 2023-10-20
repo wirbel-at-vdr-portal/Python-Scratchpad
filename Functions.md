@@ -54,7 +54,12 @@ def outer_func():
 
 outer_func()
 ```
-
+## Default arguments
+If we call the my_function without argument, it uses the default value.
+```
+def my_function(planet = "Earth"):
+  print("I am from " + planet)
+```
 ## Variadic arguments
 
 Sometimes, you don't know exactly the number of function arguments while coding.  
