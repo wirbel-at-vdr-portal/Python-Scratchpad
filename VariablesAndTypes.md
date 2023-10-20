@@ -255,10 +255,37 @@ Returns a new *array of bytes*. The *bytearray* type is a mutable (non-constant)
 If source is
   * ommitted - an array of size 0 is created
   * string - initialized by str.encode(). encoding is required.
-  * an object conforming to the buffer interface - a read-only buffer of the object will be used to initialize
+  * an object conforming to the *buffer interface* - a read-only buffer of the object will be used to initialize
   * integer - an zeroed array of that size is created
 
+> [!NOTE]
+> The **buffer protocol** provides a way to access the internal data of an object. This internal data is a memory array or a buffer.
+> The buffer protocol allows one object to expose its internal data (buffers) and the other to access those buffers without intermediate copying.
+> This protocol is only accessible to us at the C-API level and not using our normal codebase.
+> So, in order to expose the same protocol to the normal Python codebase, memory views are present.
+
 ## *MemoryView*
+A memory view is a safe way to expose the **buffer protocol** in Python.
+It allows you to access the internal buffers of an object by creating a memory view object.
+
+Whenever we perform some action on an object (call a function of an object, slice an array), Python needs to create a copy of the object.
+If we have large data to work with (eg. binary data of an image), we would unnecessarily create copies of huge chunks of data, which serves almost no use.
+Using the **buffer protocol**, we can give another object access to use/modify the large data without copying it. This makes the program use less memory and increases the execution speed.
+
+* Syntax: **memoryview(obj)**
+   * obj - an object, which supports the buffer protocol (bytes, bytearray)
+```
+b = bytearray('ABC', 'utf-8')
+print('Before:', b)
+
+m = memoryview(b)
+
+# update 1st index of m to 'Z'
+m[1] = 90
+print('After:', b)
+# Before: bytearray(b'ABC')
+# After: bytearray(b'AZC')
+```
 
 ## *NoneType*
 If you have experience with other programming languages, like C/C++, then you know the use of *null* or *NIL*. Other languages use a special pointer, which always doesn't point to anything. Sometimes *null* is an alias to int(0).
