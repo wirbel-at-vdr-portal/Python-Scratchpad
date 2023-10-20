@@ -349,25 +349,6 @@ else:
 x = object()
 ```
 
-## *Classes*
-```
-class MyClass:                                      
-    myString = "blah"
-
-    # like a constructor, called once on create instance
-    # note the usage of 'self'                               
-    def __init__(self, aString):
-        self.myString = aString
-
-    def function(self):                             
-        print("This is a message inside the class.")
-
-# now working with it
-m = MyClass()
-m.function()
-```
-
-
 ## *Numpy Arrays*
 Numpy arrays are that they are fast, easy to work with, and give users the opportunity to perform calculations
 across entire arrays. Numpy Arrays require the use of the numpy package.
