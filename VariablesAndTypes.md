@@ -229,10 +229,34 @@ phonebook["Jake"] = 938273443
 # alternative zu del
 phonebook.pop("Jake")
 ```
-
+## *Byte Literals*
+```
+bytesliteral   ::=  bytesprefix(shortbytes | longbytes)
+bytesprefix    ::=  "b" | "B" | "br" | "Br" | "bR" | "BR"
+shortbytes     ::=  "'" shortbytesitem* "'" | '"' shortbytesitem* '"'
+longbytes      ::=  "'''" longbytesitem* "'''" | '"""' longbytesitem* '"""'
+shortbytesitem ::=  shortbyteschar | bytesescapeseq
+longbytesitem  ::=  longbyteschar | bytesescapeseq
+shortbyteschar ::=  <any ASCII character except "\" or newline or the quote>
+longbyteschar  ::=  <any ASCII character except "\">
+bytesescapeseq ::=  "\" <any ASCII character>
+```
+* example:
+```
+x = b'Bytes objects are immutable sequences of single bytes'
+```
 ## *Bytes*
+Returns a new *bytes object*, which is an immutable (constant) sequence of unsigned chars. *bytes* is an immutable version of bytearray.
+* **Syntax** *bytes*([source[, encoding[, errors]]])
 
 ## *ByteArray*
+Returns a new *array of bytes*. The *bytearray* type is a mutable (non-constant) sequence of unsigned chars.
+* **Syntax** *bytearray*([source[, encoding[, errors]]])
+If source is
+  * ommitted - an array of size 0 is created
+  * string - initialized by str.encode(). encoding is required.
+  * an object conforming to the buffer interface - a read-only buffer of the object will be used to initialize
+  * integer - an zeroed array of that size is created
 
 ## *MemoryView*
 
