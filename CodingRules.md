@@ -27,4 +27,12 @@
 
 * **Variable names** are case-sensitive.
 
+* **The pass Statement**  
+The **pass** statement is used, where no content/code should be done, but for syntax reason an indent is needed.
+It just does nothing, but avoiding an python syntax error.  
+```
+   for x in [0, 1, 2]:
+      pass
+```
+
 [back to index](README.md)
