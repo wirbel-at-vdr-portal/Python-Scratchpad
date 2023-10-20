@@ -6,15 +6,15 @@
 
 | Category        | Types                             |
 |-----------------|-----------------------------------|
-| Text Type       | [str](VariablesAndTypes.md#%2AStrings%2A) |
-| Numeric Types   | [int, float, complex](VariablesAndTypes.md#%2ANumbers%2A) |
-| Sequence Types  | [list](VariablesAndTypes.md#%2ALists%2A), [tuple](VariablesAndTypes.md#%2ATuples%2A), [range](VariablesAndTypes.md#%2ARange%2A) |
-| Mapping Type    | [dict](VariablesAndTypes.md#%2ADictionaries%2A)                              |
-| Set Types       | [set](VariablesAndTypes.md#%2ASets%2A), [frozenset](VariablesAndTypes.md#%2Afrozenset%2A) |
-| Boolean Type    | [bool](VariablesAndTypes.md#%2ABoolean%2A)                              |
-| Binary Types    | [bytes](VariablesAndTypes.md#%2ABytes%2A), [bytearray](VariablesAndTypes.md#%2AByteArray%2A), [memoryview](VariablesAndTypes.md#%2AMemoryView%2A) |
-| None Type       | [NoneType](VariablesAndTypes.md#%2ANoneType%2A) |
-| non-standard    | [Numpy Arrays](VariablesAndTypes.md#%2ANumpy%20Arrays%2A), [Pandas](VariablesAndTypes.md#%2APandas%2A) |
+| Text Type       | [str](VariablesAndTypes.md#Strings) |
+| Numeric Types   | [int, float, complex](VariablesAndTypes.md#Numbers) |
+| Sequence Types  | [list](VariablesAndTypes.md#Lists), [tuple](VariablesAndTypes.md#Tuples), [range](VariablesAndTypes.md#Range) |
+| Mapping Type    | [dict](VariablesAndTypes.md#Dictionaries)                              |
+| Set Types       | [set](VariablesAndTypes.md#Sets), [frozenset](VariablesAndTypes.md#frozenset) |
+| Boolean Type    | [bool](VariablesAndTypes.md#Boolean)                              |
+| Binary Types    | [bytes](VariablesAndTypes.md#Bytes), [bytearray](VariablesAndTypes.md#ByteArray), [memoryview](VariablesAndTypes.md#MemoryView) |
+| Untyped         | [NoneType](VariablesAndTypes.md#NoneType) |
+| non-standard    | [Numpy Arrays](VariablesAndTypes.md#Numpy%20Arrays), [Pandas](VariablesAndTypes.md#Pandas) |
 
 
 ## The *global* keyword
