@@ -15,6 +15,7 @@
 * [List Comprehentions](ListComprehentions.md)
 * [Lambdas](Lambdas.md)
 * [Closures](Closures.md)
+* [Classes](Classes.md)
 * [Modules and Packages](ModulesAndPackages.md)
 * [Code Introspection](CodeIntrospection.md)
 * [Regular Expressions](regexp.md)
