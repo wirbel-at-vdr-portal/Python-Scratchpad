@@ -117,5 +117,18 @@ print("free" in txt)
 mystring.split(" ")
 # ['Hello', 'world!']
 ```
+* **Escape sequences**
+```
+\' 	Single Quote
+\" 	Double Quote 	
+\\ 	Backslash 	
+\n 	New Line 	
+\r 	Carriage Return 	
+\t 	Tab 	
+\b 	Backspace 	
+\f 	Form Feed 	
+\ooo 	Octal value 	
+\xhh 	Hex value
+```
 
 [back to index](README.md)
