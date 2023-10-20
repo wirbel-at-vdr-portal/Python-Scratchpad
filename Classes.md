@@ -31,6 +31,32 @@ Use the **\_\_init__** function to initialize a class. It may assign values to i
 
 * **The \_\_str__() Function**  
 Use the **\_\_str__** function to set, how to represent the class as a string.
+If we try to print our class, we get the following
+```
+print(m)
+# <__main__.MyClass object at 0x000001B22E6C0470>
+```
+As we didn't yet implement this function, we get an default. Lets add this function and retry.
+```
+class MyClass:
+    myString = "blah"
+
+    # like a constructor, called once on create instance
+    # note the usage of 'self'
+    def __init__(self, aString):
+        self.myString = aString
+        
+    def __str__(self):
+        return "MyClass(%s)" % self.myString
+
+    def function(self):
+        print("This is a message inside the class.")
+
+m = MyClass("hello world")
+print(m)
+# MyClass(hello world)
+```
+
 
 
 * **The self Parameter**  
