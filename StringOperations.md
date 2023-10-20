@@ -130,5 +130,8 @@ mystring.split(" ")
 \ooo 	Octal value 	
 \xhh 	Hex value
 ```
+* **List of string methods**  
+A list with all string functions/methods can be found [here.](https://www.w3schools.com/python/python_strings_methods.asp)
+
 
 [back to index](README.md)
