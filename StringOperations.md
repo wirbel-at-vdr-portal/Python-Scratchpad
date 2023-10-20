@@ -90,10 +90,15 @@ print(a.strip())
 ```
 * **Check if string begins or ends with substring**
 ```
-mystring.startswith("Hello")
+print(mystring.startswith("Hello"))
 # True
-mystring.endswith("asdf")
+print(mystring.endswith("asdf"))
 # False
+```
+* **Replace parts of string**
+```
+s = mystring.replace("Hel", "Jap")
+print(s)
 ```
 * **Check if "free" is present in the following text**
 ```
