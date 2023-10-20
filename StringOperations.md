@@ -82,6 +82,12 @@ print(mystring.upper())
 print(mystring.lower())
 # 'hello world!'
 ```
+* **Trim a string using strip()**
+```
+a = " Hello, World! "
+print(a.strip())
+# 'Hello world!'
+```
 * **Check if string begins or ends with substring**
 ```
 mystring.startswith("Hello")
