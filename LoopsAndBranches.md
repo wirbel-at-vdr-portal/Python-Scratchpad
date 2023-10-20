@@ -15,6 +15,12 @@
              # do another thing
              pass
 ```
+* **if/else in a single line**
+```
+         if a > b: print("a is greater than b")
+
+         if a > b print("A") else print("B")
+```
 * **for**
 ```
          for i in [1,2,3]:
