@@ -84,6 +84,18 @@ print(all_numbers)
 for x in mylist:
     print(x)
 ```
+## *Range*
+**range()**  generates a sequence of ordered integers by defining a start and end point of the range.  
+It is mainly used with the for loop. If start is not given, it defaults to zero, step defaults to 1.
+* **Syntax**
+```
+range(stop)
+range(start, stop[, step])
+```
+> [!NOTE]
+> In Python 2, there are two functions for sequence of integers, *range* and *xrange*.
+> These functions are very similar, but *range* returns a list, and *xrange* returns an *xrange object*.
+> In Python 3, *xrange* has been dropped, and *range* behaves like Python 2 *xrange*.
 
 ## *Sets*
 **Sets** can be understood as Lists with unique and constant items.  
