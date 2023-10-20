@@ -19,4 +19,16 @@ m = MyClass()
 m.function()
 ```
 
+* **The \_\_init__() Function**  
+Use the **\_\_init__** function to initialize a class.
+
+* **The \_\_str__() Function**  
+Use the **\_\_str__** function to set, how to represent the class as a string.
+
+* **The self Parameter**  
+The first parameter of any function in the class is a reference to the current class instance.  
+Usually, it is called **self** in examples.
+
+Some self explaining name should be used in any case.
+
 [back to index](README.md)
