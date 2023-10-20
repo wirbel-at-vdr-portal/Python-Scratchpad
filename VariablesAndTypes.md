@@ -267,16 +267,17 @@ The purpose is to show, that *some value is not initialized* or a function faile
 
 Python uses the keyword **None** to define *null objects and variables* or **no value**. It's also used by functions that doesnt return anything.
 
-**None** is not a value, but an object, even an *first class citizen*.
-
-Of course, most operations doesnt work with a None, for example adding it to a string.
-At least print() will accept a None.
+**None** is not a value, but an object, even an *first class citizen*.  
+None is a singleton. That is, the NoneType class only ever gives you the same single instance of None. There’s only one None in your Python program and that's why you should use the **is** operator.
 
 > [!NOTE]
 > Comparison with **None** should be done with the **is** operator, but not **==**.
 > In boolean comparisons, *not None* is *True*.
+> 
+Of course, most operations doesnt work with None, for example adding it to a string.
+But at least print() will accept a None.
 
-example
+* checking if result is valid or None
 ```
 import re
 match = re.match("Goodbye", "Hello, World!")
@@ -285,7 +286,7 @@ if match is None:
 # It doesn't match.
 ```
 
-example #2
+* not preferred
 ```
 some_result = None
 if some_result:
