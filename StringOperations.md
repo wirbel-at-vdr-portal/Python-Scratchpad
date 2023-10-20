@@ -9,6 +9,11 @@ print("String: %s" % mystring)
 print("Float: %f" % myfloat)
 print("Integer: %d" % myint)
 print("%s is %d years old." % (name, age))
+
+age = 36
+txt = "John is {} years old."
+print(txt.format(age))
+# John is 36 years old.
 ```
 * **casting to string**
 ```
