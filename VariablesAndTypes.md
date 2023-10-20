@@ -261,6 +261,39 @@ If source is
 ## *MemoryView*
 
 ## *NoneType*
+If you have experience with other programming languages, like C/C++, then you know the use of *null* or *NIL*. Other languages use a special pointer, which always doesn't point to anything. Sometimes *null* is an alias to int(0).
+
+The purpose is to show, that *some value is not initialized* or a function failed to return a result.
+
+Python uses the keyword **None** to define *null objects and variables* or **no value**. It's also used by functions that doesnt return anything.
+
+**None** is not a value, but an object, even an *first class citizen*.
+
+Of course, most operations doesnt work with a None, for example adding it to a string.
+At least print() will accept a None.
+
+> [!NOTE]
+> Comparison with **None** should be done with the **is** operator, but not **==**.
+> In boolean comparisons, *not None* is *True*.
+
+example
+```
+import re
+match = re.match("Goodbye", "Hello, World!")
+if match is None:
+    print("It doesn't match.")
+# It doesn't match.
+```
+
+example #2
+```
+some_result = None
+if some_result:
+    print("Got a result!")
+else:
+    print("No result.")
+# No result.
+```
 
 ## *Objects*
 ```
