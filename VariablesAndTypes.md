@@ -143,6 +143,20 @@ aSet = {"apple", "banana", "cherry"}
 ```
 * [set methods](https://www.w3schools.com/python/python_sets_methods.asp)
 
+## *frozenset*
+
+* Syntax
+**frozenset(iterable)**  
+*iterable* - any object that can be iterated: list, tuple, string, dictionary, or a set.
+
+The *frozenset()* is an inbuilt function, which takes an iterable object and returns its *frozenset object* initialized with elements from the given iterable. Frozenset objects and sets in Python are very similar. Both are unordered and unindexed. Frozenset objects are immutable (they can't be changed). The order of elements is not guaranteed to be preserved.
+Since the frozenset is an immutable data type, it can be used in cases where we have to create a group of keys (or some other data) that we don't want the user to change, as frozenset doesn't allow changes.
+```
+myList = ['apple', 'banana', 'cherry']
+x = frozenset(myList)
+print(x)
+```
+
 ## *Tuples*
 **Tuples** can be understood as ordered Lists with constant items.  
 Sets are
