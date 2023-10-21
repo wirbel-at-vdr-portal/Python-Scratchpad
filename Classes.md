@@ -80,5 +80,33 @@ m = MyClass("hello world")
 m.function()
 ```
 
+* **Inheritance**
+  * A derived class will inherit the properties and methods from it's base class.
+  * A method in the child class with the same name as a function in the parent class,  
+    overrides the inheritance of the parent method.
+
+> [!NOTE]
+> The child's \_\_init__() function overrides the parent's \_\_init__() function.
+> Therefore, the base classes \_\_init__() should be called inside.
+
+```
+class ChildClass(BaseClass):
+    def __init__():
+        BaseClass.__init__()
+    # add child class members here.
+    pass
+```
+
+If calling members of the base class, we may use the name of the base class, or, the **super()** function.  
+For single inheritance, **super()** is just a fancier way to refer to the base type. That way, you make the code more maintainable, for example in case you want to change the base type's name. When you are using super() everywhere, you just need to change it in the class line.  
+When using **super()**, a single call will not only automatically call the method of all base types (in the correct inheritance order), but it will also make sure that each method is only called once.
+```
+class ChildClass(BaseClass):
+    def __init__():
+        super().__init__()
+    # add child class members here.
+    pass
+```
+
 
 [back to index](README.md)
