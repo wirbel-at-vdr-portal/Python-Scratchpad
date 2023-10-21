@@ -17,6 +17,7 @@
 * [Lambdas](Lambdas.md)
 * [Closures](Closures.md)
 * [Classes](Classes.md)
+* [Iterators](Iterators.md)
 * [Modules and Packages](ModulesAndPackages.md)
 * [Code Introspection](CodeIntrospection.md)
 * [Regular Expressions](regexp.md)
