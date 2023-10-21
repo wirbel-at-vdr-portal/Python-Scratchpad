@@ -26,7 +26,7 @@ Instead a **generator-iterator** object is returned; this conforms to the iterat
                 a, b = 0, 1
                 while 1:
                    yield b          # "yield" expression_list
-                   a, b = b, a+b
+                   a, b = b, a+b    # a = b, b += a;
     ```
 * If a **yield** statement is encountered, the state of the function is ***frozen***, and the value of expression_list is returned to .next()’s caller.
 * A generator function can also contain **return** statements (but no value/expression allowed to be returned):
