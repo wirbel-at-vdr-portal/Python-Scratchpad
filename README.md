@@ -1,7 +1,8 @@
 **#Contents**
 
-**This is my personal scratchpad** to learn **Python**, while walking through this nice online tutorial:
+**This is my personal scratchpad** to learn **Python**, while walking through these nice online tutorials:
 * [https://www.learnpython.org/en/Welcome](https://www.learnpython.org/en/Welcome).
+* [https://www.w3schools.com/python/default.asp](https://www.w3schools.com/python/default.asp)
 
 *If you already know python, reading this is boring and waste of time for you..*
 
