@@ -27,11 +27,14 @@
              print(i)
 
          # equal to for i in [0,1,2,3,4]:
-         # range returns a new list with numbers
+         # Python 2: range returns a new list with numbers
+         # Python 3: range returns an iterator
          for x in range(5):
+             print(x)
 
-         # dito, but xrange returned an iterator
+         # Python 2: xrange returns an iterator
          for x in xrange(5):
+             print(x)
 ```
 * **while**
 ```
