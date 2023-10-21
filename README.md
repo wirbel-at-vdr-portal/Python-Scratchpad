@@ -1,4 +1,4 @@
-**#Contents**
+# Contents
 
 **This is my personal scratchpad** to learn **Python**, while walking through these nice online tutorials:
 * [https://www.learnpython.org/en/Welcome](https://www.learnpython.org/en/Welcome).
