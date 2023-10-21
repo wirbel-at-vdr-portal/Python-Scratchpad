@@ -100,6 +100,9 @@ class ChildClass(BaseClass):
 If calling members of the base class, we may use the name of the base class, or, the **super()** function.  
 For single inheritance, **super()** is just a fancier way to refer to the base type. That way, you make the code more maintainable, for example in case you want to change the base type's name. When you are using super() everywhere, you just need to change it in the class line.  
 When using **super()**, a single call will not only automatically call the method of all base types (in the correct inheritance order), but it will also make sure that each method is only called once.
+> [!NOTE]
+>  If a child class is derived more than once, using **super()** is safer than the name of the base class.
+
 ```
 class ChildClass(BaseClass):
     def __init__():
