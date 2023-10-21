@@ -14,10 +14,10 @@ An **iterable** is
 One can check, if an object is an iterable:
 ```
 print(iter(1))
-TypeError: 'int' object is not iterable
+# TypeError: 'int' object is not iterable
 
 print(iter((1,2,3)))
-<tuple_iterator object at 0x1537f9ac1610>
+# <tuple_iterator object at 0x1537f9ac1610>
 
 print(iter([1,2,3]))
 # <list_iterator object at 0x14be1f980610>
@@ -52,4 +52,35 @@ except StopIteration:
 # 2
 # 3
 # reached StopIteration exception
+```
+
+* A very basic iterator example
+```
+class MyIterator:
+    state = 0
+    stop = 0
+    def __init__(self, From, To):
+        self.state = From - 1
+        self.stop = To
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        self.state += 1
+        if self.state < self.stop:
+            return self.state
+        raise StopIteration
+
+it = MyIterator(0, 6)
+print(it)
+for i in it:
+    print(i)
+# <__main__.MyIterator object at 0x14c8a82fc0d0>
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
 ```
