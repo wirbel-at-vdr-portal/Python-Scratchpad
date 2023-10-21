@@ -4,6 +4,11 @@
 * [https://www.learnpython.org/en/Welcome](https://www.learnpython.org/en/Welcome).
 * [https://www.w3schools.com/python/default.asp](https://www.w3schools.com/python/default.asp)
 
+While slowly reaching some **very basic understanding** of Python,  
+i try to document in a very condensed manner everything so far understood.
+
+This is a *loooong* way and *work in progress*.
+
 *If you already know python, reading this is boring and waste of time for you..*
 
 * [Coding rules and Line End](CodingRules.md)
