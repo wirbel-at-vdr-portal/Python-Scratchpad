@@ -27,3 +27,4 @@ This is a *loooong* way and *work in progress*.
 * [Code Introspection](CodeIntrospection.md)
 * [Regular Expressions](regexp.md)
 * [Exceptions](Exceptions.md)
+* [User input](UserInput.md)
