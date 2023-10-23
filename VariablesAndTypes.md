@@ -217,8 +217,14 @@ Sets are
     aTuple[1:3]
     # (1,3)
 ```
-* [tuple methods](https://www.w3schools.com/python/python_tuples_methods.asp)
+* tuple methods
 
+| Method     | Description                        |
+| ---------- | ---------------------------------- |
+| *count()*  | Returns the number of times a specified value occurs in a tuple                         |
+| *index()*  | Searches the tuple for a specified value and returns the position of where it was found |
+
+	
 
 ## *Dictionaries*
 Similar to lists/array, but works with keys and values instead of indexes.  
