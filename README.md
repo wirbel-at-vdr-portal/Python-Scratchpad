@@ -29,3 +29,4 @@ This is a *loooong* way and *work in progress*.
 * [Exceptions](Exceptions.md)
 * [User input](UserInput.md)
 * [Reading and writing files](FileOperations.md)
+* [built-ins](Builtins.md)
