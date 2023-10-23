@@ -28,3 +28,4 @@ This is a *loooong* way and *work in progress*.
 * [Regular Expressions](regexp.md)
 * [Exceptions](Exceptions.md)
 * [User input](UserInput.md)
+* [Reading and writing files](FileOperations.md)
