@@ -4,6 +4,7 @@
 * a **Decorator** is a function that takes a function and extends the behavior of the function without explicitly modifying it.
 * a shorter definition: **Decorators wrap a function, modifying its behavior.**
 * The wrapper function needs to take the *same arguments* and *return the value of the decorated function*.
+* **Decorators** can be nested.
 
 ```
 def my_decorator(func):
