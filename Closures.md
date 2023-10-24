@@ -52,6 +52,6 @@ print(cubic(3))
 * **Notes**
    * We can avoid the use of global values  by calling the local function outside its scope, and accessing the enclosed variable outside its scope.
    * Can be used for hiding data in your programs and is highly used while building python microservices.
-   * It is used for implementing decorators in Python.
+   * It is used for implementing [**decorators**](Decorators.md) in Python.
 
 [back to index](README.md)
