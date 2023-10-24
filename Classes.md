@@ -24,10 +24,15 @@ m.function()
 # This is a message inside the class.
 ```
 
-* In Python, there is no concept of **Private** members or methods.  
-However, in most Python code, a name prefixed with an underscore, For e.g. _aMember should be treated as a non-public part of the class interface.
+* **\_Single Leading Underscores**  
+In Python, there is no concept of **Private** members or methods.  
+However, in most Python code, a name prefixed with an underscore, for example *_aMember* should be treated as a non-public part of the class.
 
-* Inside a class, any identifier of the form __aMember (two leading underscores) is replaced with _classname__aMember.
+* **\_\_Double Leading Underscores**  
+Inside a class, any identifier of the form *__aMember* (two leading underscores) is replaced with _classname__aMember. This is called name mangling and enshures, that subclasses don't override those.
+
+* **\_\_Double leading and Double trailing underscores__**
+There’s another case of double leading and trailing underscores, so called **magic methods**, such as \_\_len__, \_\_init__. These methods provide special syntactic features to the names. For example, \_\_file__ indicates the location of the Python file, \_\_eq__ is executed when *a == b* expression is executed. 
 
 * **The \_\_init__() Function**  
 Use the **\_\_init__** function to initialize a class. It may assign values to it's members or call methods to enshure the class works as expected. The arguments following the *self* parameter are those passed to a new instance.
