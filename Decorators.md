@@ -39,7 +39,7 @@ We may also write this line shorter, by writing it on top of the function, note 
         print("Whee!")
 ```
 * **Using the functools**  
-As we have seen before, [Introspection](Introspection.md) doesn't work properly any longer, if using this approach of wrapping:
+As we have seen before, [Introspection](CodeIntrospection.md) doesn't work properly any longer, if using this approach of wrapping:
 ```
     print(say_whee)
     # <function my_decorator.<locals>.wrapper at 0x7f1908335e50>
