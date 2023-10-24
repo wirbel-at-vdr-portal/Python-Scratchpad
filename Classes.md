@@ -25,8 +25,9 @@ m.function()
 ```
 
 * In Python, there is no concept of **Private** members or methods.  
-However, in most Python code, a name prefixed with an underscore, For e.g. _geek should be treated as a non-public part of the class interface.
+However, in most Python code, a name prefixed with an underscore, For e.g. _aMember should be treated as a non-public part of the class interface.
 
+* Inside a class, any identifier of the form __aMember (two leading underscores) is replaced with _classname__aMember.
 
 * **The \_\_init__() Function**  
 Use the **\_\_init__** function to initialize a class. It may assign values to it's members or call methods to enshure the class works as expected. The arguments following the *self* parameter are those passed to a new instance.
