@@ -2,7 +2,8 @@
 
 # Classes
 
-To create a class, we use the keyword **class**.
+To create a class, we use the keyword **class**.  
+Creating an instance of a class requires the use of brackets: **()** after the class name, optional with argument(s).
 
 ```
 class MyClass:
