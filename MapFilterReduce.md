@@ -62,4 +62,57 @@ print(list(result))
 # [6, 8]
 ```
 
+## The **reduce()** function
+* *Syntax:* **variable_of_type_iterable_member = reduce(func, iterable[, initializer])**
+* **reduce()** applies a function over all items are returns a single item.
+* **reduce()** is inside functools module, we need to import it.
+
+* func() is applied to:
+   * the first two items
+   * while next items are avail, the result of the last call and the next item
+   * if no more items, the result of the last call is returned
+
+ The idea behind is to take an existing function, apply it cumulatively to all the items in an iterable, and generate a single final value.
+
+> [!NOTE]
+> **reduce()** is written in C and might be *faster* than a normal for loop.The same with an initializer
+```
+from functools import reduce
+
+def myAdd(a, b):
+    result = a + b
+    print(f"{a} + {b} = {result}")
+    return result
+
+myList = [0,1,2,3,4,5]
+
+print(reduce(myAdd, myList))
+# 0 + 1 = 1
+# 1 + 2 = 3
+# 3 + 3 = 6
+# 6 + 4 = 10
+# 10 + 5 = 15
+# 15
+```
+Similar, now using an initializer:
+```
+from functools import reduce
+
+def myAdd(a, b):
+    result = a + b
+    print(f"{a} + {b} = {result}")
+    return result
+
+numbers = [0, 1, 2, 3, 4]
+
+print(reduce(myAdd, numbers, 100))
+# 100 + 0 = 100
+# 100 + 1 = 101
+# 101 + 2 = 103
+# 103 + 3 = 106
+# 106 + 4 = 110
+# 110
+```
+
+
 [back to index](README.md)
