@@ -45,8 +45,21 @@ print(list(result))
 # [9, 11, 13]
 ```
 
+## The **filter()** function
 
+* *Syntax:* **filter object = filter(func, iterable)**
+* **filter()** selects those elements from an iterable, for which *func* returned True.
+* *func* takes one arg (the type of the iterable's items) and returns boolean
+* as in map(), the result needs to be converted with list(), set(), tuple(), ..
+```
+num = [6, 5, 8, 1]
 
+result = filter(lambda i:i>5, num)
 
+print(type(result))
+print(list(result))
+# <class 'filter'>
+# [6, 8]
+```
 
 [back to index](README.md)
