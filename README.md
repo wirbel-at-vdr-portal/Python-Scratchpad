@@ -24,6 +24,7 @@ This is a *loooong* way and *work in progress*.
 * [Closures](Closures.md)
 * [Decorators](Decorators.md)
 * [Iterators](Iterators.md)
+* [Map, Filter and Reduce](MapFilterReduce.md)
 * [Modules and Packages](ModulesAndPackages.md)
 * [Code Introspection](CodeIntrospection.md)
 * [Regular Expressions](regexp.md)
