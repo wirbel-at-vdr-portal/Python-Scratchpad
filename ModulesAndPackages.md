@@ -54,6 +54,23 @@ def main():
 if __name__ == '__main__':                         
     main()
 ```
+Some example, how to get args if calling a module..
+```
+import sys
+
+def main(argc, args):
+    print("main called with {} args".format(len(args)))
+    for a in args:
+        print(a)
+
+    # Return Code: 0
+    sys.exit()
+# end of main
+
+# begin gracefully and hand-over arguments
+if __name__ == "__main__":
+    main(len(sys.argv), sys.argv[0:])
+```
 
 #### Finding function in a Module
 To find members of a module, one can use the **dir()** function, after importing the module.
