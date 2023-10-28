@@ -4,6 +4,11 @@
 SciPy is a scientific computation library using [NumPy arrays](../VariablesAndTypes.md#Numpy%20Arrays).  
 SciPy stands for Scientific Python.
 
+It allows for
+* use mathemathical und physical units in Python
+* compute results in physical units
+
+
 * [SciPy constants](Constants.md)
 
 
