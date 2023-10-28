@@ -1,3 +1,5 @@
+[back to index](README.md)
+
 # List of built-ins
 
 | Function            | Description                                                                                   |
@@ -69,3 +71,5 @@
 | **type()**          | Returns the type of an object                                                                 |
 | **vars()**          | Returns the __dict__ property of an object                                                    |
 | **zip()**           | Returns an iterator, from two or more iterators                                               |
+
+[back to index](README.md)
