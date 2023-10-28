@@ -83,6 +83,10 @@ All standard binary prefixes are available as lowercase: kibi, mebi, gibi, tebi,
 
 ## useful angle units in radians
 * degree
+```
+print(360.0 * constants.degree)
+# 6.283185307179586
+```
 
 ## useful time units in seconds
 * minute, hour, day, week, year
