@@ -32,3 +32,5 @@ This is a *loooong* way and *work in progress*.
 * [User input](UserInput.md)
 * [Reading and writing files](FileOperations.md)
 * [built-ins](Builtins.md)
+* [Matplotlib](Matplotlib/Index.md)
+* [SciPy - Scientific Python(SciPy/Index.md)
