@@ -57,6 +57,51 @@ print(zeros)
 The returned object *zeros* contains the result in it's member x.
 
 ## *optimize.curve_fit()* - Fitting data
+Here, we try to fit data from an [.csv file](./data/example2.csv), to get a second order poly.  
+The data relates to x=(-5.0, +5.0, 0.1) and was created with popt = \[ 0.3  1.2 -0.1\] plus some randomness.
+
+* [Syntax: *scipy.optimize.curve_fit(f, xdata, ydata, p0=None, sigma=None, absolute_sigma=False, check_finite=None, bounds=(-inf, inf), method=None, jac=None, \*, full_output=False, nan_policy=None, \*\*kwargs)*](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html#scipy.optimize.curve_fit)
+* *f* - The model function, f(x, …).  
+  **It must take *x* as the first arg** and the params to fit as separate remaining arguments.
+* *xdata* - the independent variable, x, where the data points y are measured
+* *ydata* - the dependent data, y, same size as x
+
+```
+import numpy as np
+from scipy.optimize import curve_fit
+import matplotlib.pyplot as plt
+import csv
+
+# xpoints = -5.0 ... +5.0
+xpoints = np.array(list(range(-50,50))) * 0.1
+
+# read data from a .csv file
+ydata = []
+with open('data/example2.csv',newline='') as csvfile:
+    for row in csv.reader(csvfile, delimiter=','):
+        for s in row:
+            try:
+                ydata.append(float(s))
+            except:
+                pass
+
+def poly2(x,p0,p1,p2):
+    return  p0 + x*p1 + x**2*p2
+
+popt, pcov = curve_fit(poly2, xpoints, ydata)
+print(popt)
+# [ 0.39000073  1.20031115 -0.09919223]
+
+# using the coeffs estimated by curve_fit, create a fitted plot.
+yfit = []
+for x in xpoints:
+    yfit.append(poly2(x,popt[0],popt[1],popt[2]))
+
+plt.plot(xpoints,ydata, 'o')
+plt.plot(xpoints,yfit)
+plt.grid()
+plt.show()
+```
 ![Figure_2](./img/Figure_2.png)
 
 [back to Index](Index.md)
