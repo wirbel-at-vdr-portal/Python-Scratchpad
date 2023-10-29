@@ -6,7 +6,7 @@ Optimizers are a set of procedures in SciPy that either find the minimum value o
 
 Let's plot the function *f(x) = x + cos(x)*.
 > [!NOTE]
-> This example requires the mathplotlib, which may be installed with [pip install mathplotlib](../pip.md).
+> This example requires the matplotlib, which may be installed with [pip install matplotlib](../pip.md).
 ```
 import matplotlib.pyplot as plt
 import numpy as np
