@@ -394,6 +394,8 @@ x = object()
 ## *Numpy Arrays*
 Numpy arrays are that they are fast, easy to work with, and give users the opportunity to perform calculations
 across entire arrays. Numpy Arrays require the use of the numpy package.
+> [!NOTE]
+> To use a numpy array as a standard python array, use the list() function.
 
 ```
 # Create 2 new lists height and weight
