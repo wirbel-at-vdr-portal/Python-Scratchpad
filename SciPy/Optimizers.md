@@ -56,6 +56,7 @@ print(zeros)
 ```
 The returned object *zeros* contains the result in it's member x.
 
-
+## *optimize.curve_fit()* - Fitting data
+![Figure_2](./img/Figure_2.png)
 
 [back to Index](Index.md)
