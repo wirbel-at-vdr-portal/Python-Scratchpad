@@ -52,7 +52,7 @@ print(zeros)
 #       r: [-1.674e+00]
 #     qtf: [-2.668e-13]
 ```
-The return object *zeros* contains the result in it's member x.
+The returned object *zeros* contains the result in it's member x.
 
 
 
