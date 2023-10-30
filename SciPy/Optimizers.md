@@ -56,23 +56,6 @@ print(zeros)
 ```
 The returned object *zeros* contains the result in it's member x.
 
-> [!NOTE]
-> Be careful with the result of an optimizer; sometimes the result may be unexpected.
-
-Example:
-Let's try to find the minima of *f(x) = sin(x)*. Of course, the are unlimited of them..
-![Figure_4](./img/Figure_4.png)
-```
-from scipy.optimize import minimize
-from math import sin
-
-minima = minimize(sin, 0, method='BFGS')
-
-print(minima.x)
-# [-1.57079633]
-```
-In this example, we just found one minima at -pi/2, the second one at +3*pi/2 is not reported.
-
 ## *optimize.minimize()* - Find the minima of a function
 Let's try to find the minima of the function *f(x) = x^2 + x + 2* using **optimize.minimize()**.
 ![Figure_3](./img/Figure_3.png)
@@ -120,6 +103,25 @@ print(minima)
 #     nfev: 8
 #     njev: 4
 ```
+
+> [!NOTE]
+> Be careful with the result of an optimizer; sometimes the result may be unexpected.
+
+Example:
+Let's try to find the minima of *f(x) = sin(x)*. Of course, the are unlimited of them..
+```
+from scipy.optimize import minimize
+from math import sin
+
+minima = minimize(sin, 0, method='BFGS')
+
+print(minima.x)
+# [-1.57079633]
+```
+
+![Figure_4](./img/Figure_4.png)
+
+In this example, we just found one minima at -pi/2, the second one at +3*pi/2 is not reported.
 
 ## *optimize.curve_fit()* - Fitting data
 Here, we try to fit data from an [.csv file](./data/example2.csv), to get a second order poly.  
