@@ -13,5 +13,6 @@ It allows for
 Index:
 * [SciPy constants](Constants.md)
 * [SciPy Optimizers](Optimizers.md)
+* [Sparse Data](SparseData.md)
 
 [back to index](../README.md)
