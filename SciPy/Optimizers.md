@@ -56,6 +56,54 @@ print(zeros)
 ```
 The returned object *zeros* contains the result in it's member x.
 
+## *optimize.minimize()* - Find the minima of a function
+Let's try to find the minima of the function *f(x) = x^2 + x + 2* using **optimize.minimize()**.
+![Figure_3](./img/Figure_3.png)
+
+* [Syntax: *scipy.optimize.minimize(fun, x0, args=(), method=None, jac=None, hess=None, hessp=None, bounds=None, constraints=(), tol=None, callback=None, options=None)*](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html#scipy.optimize.minimize)
+* *fun* - The function, fun = f(x, \*args) -> float.  
+  **It must take *x* as the first arg** and may use additional params.
+* *x0* - initial guess
+* *args* - opt: arguments for fun
+* *method* - opt: one of
+    * Nelder-Mead
+    * Powell
+    * CG
+    * BFGS
+    * Newton-CG
+    * L-BFGS-B
+    * TNC
+    * COBYLA
+    * SLSQP
+    * trust-constr
+    * dogleg
+    * trust-ncg
+    * trust-exact
+    * trust-krylov
+
+```
+from scipy.optimize import minimize
+
+def fun(x):
+    return x**2 + x + 2
+
+minima = minimize(fun, 0, method='BFGS')
+print(minima.x)
+#[-0.50000001]
+
+print(minima)
+#  message: Optimization terminated successfully.
+#  success: True
+#   status: 0
+#      fun: 1.75
+#        x: [-5.000e-01]
+#      nit: 2
+#      jac: [ 0.000e+00]
+# hess_inv: [[ 5.000e-01]]
+#     nfev: 8
+#     njev: 4
+```
+
 ## *optimize.curve_fit()* - Fitting data
 Here, we try to fit data from an [.csv file](./data/example2.csv), to get a second order poly.  
 The data relates to x=(-5.0, +5.0, 0.1) and was created with popt = \[ 0.3  1.2 -0.1\] plus some randomness.
