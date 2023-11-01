@@ -35,3 +35,4 @@ This is a *loooong* way and *work in progress*.
 * [Installing Packages with pip](pip.md)
 * [Matplotlib](Matplotlib/Index.md)
 * [SciPy - Scientific Python](SciPy/Index.md)
+* [Practical Examples](Examples/Index.md)
