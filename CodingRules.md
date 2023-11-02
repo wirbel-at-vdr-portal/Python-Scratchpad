@@ -53,4 +53,12 @@ It just does nothing, but avoiding an python syntax error.
       pass
 ```
 
+* **imports**
+   * one module per line
+   * always at the top of a file
+   * avoid wildcard imports:
+```
+    from foo import *
+``` 
+
 [back to index](README.md)
