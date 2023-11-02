@@ -59,6 +59,8 @@ It just does nothing, but avoiding an python syntax error.
    * avoid wildcard imports:
 ```
     from foo import *
-``` 
+```
+* further suggestions are in [CS240](https://w3.cs.jmu.edu/spragunr/CS240_F14/style_guide.shtml)
+ 
 
 [back to index](README.md)
