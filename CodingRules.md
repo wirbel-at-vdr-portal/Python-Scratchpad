@@ -25,7 +25,11 @@
 > Tab is accepted, and also other number of spaces.  
 > I don't use Tabs because every editor displays them different.
 
-* **Code Blocks** (if/else, loops, functions, ..) are formed by **indent**, instead of curly braces. 
+* **Code Blocks** (if/else, loops, functions, ..) are formed by **indent**, instead of curly braces.  
+  * top-level functions and class definitions should separated with two blank lines.
+  * Method definitions inside a class are separated by a single blank line.
+  * Blank lines should be used to indicate logical sections
+  * Blank lines may be omitted between a bunch of related one-liners
 
 * **Comments** are done with '#'.   
   Comments can be placed at the end of a line, and Python will ignore the rest of the line
