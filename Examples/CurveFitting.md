@@ -16,7 +16,7 @@ X is in the example *Rohdaten*, and Y is *Anzeigewerte*, because i take an exist
 
 I don't know at the beginning which degree of polynom i need. I usually begin with k = 2 (2nd order), but that depends on the actual data set.
 
-**SciPy.optimize** module contains a function *curve_fit()*:
+**SciPy.optimize** module contains a function [curve_fit()](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html):
 
 * Syntax: *curve_fit(f, xdata, ydata, p0=None, ...)*
     * f  - The model function, f(x, …); x is first arg, separate args follow
@@ -98,9 +98,5 @@ plt.title(str(popt))
 plt.tight_layout()
 plt.show()
 ```
-
-# Overview of SciPy FFT functions.
-
-SciPy has a lot of different FFT functions, [here is the documentation](https://docs.scipy.org/doc/scipy/reference/fft.html).
 
 [back to Index](Index.md)
