@@ -27,6 +27,12 @@ This boils down to...
 
 ![Figure_1](./img/Figure_1.png)
 
+This code uses numpy versions of fft and ifft.
+
+> [!NOTE]
+> The *matplotlib* module reminds to the use of matlabs plot function - **nice**.  
+> Similar, linspace is somewhat similar to matlab linspace function.
+
 ```
 import matplotlib.pyplot as plt
 from numpy import sin,pi,linspace,arange,abs
@@ -79,7 +85,72 @@ plt.tight_layout()
 plt.show()
 ```
 
+# Second example, using SciPy/fft
+
+The [SciPy](../SciPy/Index.md) module has also **fft** and **ifft** functions, which seems to be performance optimized versions.
+
+> [!NOTE]
+> Old examples will point you to the *SciPy/fftpack* submodule, which is *deprecated*.  
+> Use *SciPy/fft* instead.
+
+Let's create this a signal, which consists mainly from odd harmonics, and looks like a typical clock signal on a scope.  
+I used just five harmonics, but you may want to play with the *range()* function in *TestSignal()*.
+
+![Figure_2](./img/Figure_2.png)
+
+```
+import matplotlib.pyplot as plt
+from numpy import sin,pi,linspace,arange,abs
+from scipy.fft import fft, ifft
+
+plt.figure(figsize = (12, 6))
+
+sr = 2048                  # sampling rate in time domain
+t = linspace(0.0, 1.0, sr) # time vector
+
+def SinusSignal(A, f, phs, t):
+    return A * sin(2*pi*f*t + phs)
 
 
+def TestSignal(t):
+    res = t * 0;
+    for i in range(5):
+        n = 2*i+1
+        res += SinusSignal(3.0/n, n, 0, t)
+    return res
+
+x = TestSignal(t)
+
+
+# doing the fft
+X = fft(x)
+N = len(X)
+n = arange(N)
+T = N/sr
+freq = n/T
+A = (2. / sr)
+
+plt.subplot(121)
+plt.plot(t, ifft(X), 'r+') # same as plt.plot(t, TestSignal(t))
+plt.xlabel('Time (s)')
+plt.ylabel('Amplitude')
+plt.title('Time Domain')
+
+
+plt.subplot(122)
+plt.stem(freq, A * abs(X),
+         'b', markerfmt="X", basefmt="-b")
+plt.xlim(0, 10)
+plt.xlabel('Freq (Hz)')
+plt.ylabel('FFT Amplitude |X(freq)|')
+plt.title('Frequency Domain')
+
+plt.tight_layout()
+plt.show()
+```
+
+# Overview of SciPy FFT functions.
+
+SciPy has a lot of different FFT functions, [here is the documentation](https://docs.scipy.org/doc/scipy/reference/fft.html).
 
 [back to Index](Index.md)
