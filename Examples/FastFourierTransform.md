@@ -23,7 +23,7 @@ This boils down to...
 
 *f(t) = 3.0 \* sin(2\*pi\*1.0\*t + 30°\*(pi/180°)) + 1.0 \* sin(2\*pi\*4.0\*t + 10°\*(pi/180°)) + 0.5 \* sin(2\*pi\*7.0\*t + 5°\*(pi/180°))*
 
-And then, try to run a FFT on this sum signal.
+**And then, try to run a FFT on this sum signal.**
 
 ```
 import matplotlib.pyplot as plt
