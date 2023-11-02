@@ -22,7 +22,7 @@
 
 * **Indent is 4 (four) spaces.**
 > [!NOTE]
-> Tab is accepted, and also other number of spaces.  
+> Tabs are accepted, and also other number of spaces.  
 > I don't use Tabs because every editor displays them different.
 
 * **Code Blocks** (if/else, loops, functions, ..) are formed by **indent**, instead of curly braces.  
@@ -54,12 +54,19 @@ It just does nothing, but avoiding an python syntax error.
 ```
 
 * **imports**
+   * always at the top of a file 
    * one module per line
-   * always at the top of a file
    * avoid wildcard imports:
 ```
     from foo import *
 ```
+
+* **define a main() function on larger or distributed projects**
+```
+if __name__ == "__main__":
+    main()
+```
+
 * further suggestions are in [CS240](https://w3.cs.jmu.edu/spragunr/CS240_F14/style_guide.shtml)
  
 
