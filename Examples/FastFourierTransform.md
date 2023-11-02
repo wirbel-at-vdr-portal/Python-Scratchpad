@@ -25,6 +25,8 @@ This boils down to...
 
 **And then, try to run a FFT on this sum signal.**
 
+![Figure_1](./img/Figure_1.png)
+
 ```
 import matplotlib.pyplot as plt
 from numpy import sin,pi,linspace,arange,abs
@@ -76,6 +78,8 @@ plt.title('Frequency Domain')
 plt.tight_layout()
 plt.show()
 ```
+
+
 
 
 [back to Index](Index.md)
