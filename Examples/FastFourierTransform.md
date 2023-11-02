@@ -18,7 +18,7 @@ Let's construct a time domain signal from three frequencies:
 * 1Hz with amplitude 3.0 and phase 30°
 * 4Hz with amplitude 1.0 and phase 10°
 * 7Hz with amplitude 0.5 and phase 5°
-* 
+
 This boils down to...
 
 *f(t) = 3.0 \* sin(2\*pi\*1.0\*t + 30°\*(pi/180°)) + 1.0 \* sin(2\*pi\*4.0\*t + 10°\*(pi/180°)) + 0.5 \* sin(2\*pi\*7.0\*t + 5°\*(pi/180°))*
