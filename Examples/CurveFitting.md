@@ -17,11 +17,11 @@ X is in the example *Rohdaten*, and Y is *Anzeigewerte*, because i take an exist
 I don't know at the beginning which degree of polynom i need. I usually begin with k = 2 (2nd order), but that depends on the actual data set.
 
 **SciPy.optimize** module contains a function [curve_fit()](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html):
-
 * Syntax: *curve_fit(f, xdata, ydata, p0=None, ...)*
     * f  - The model function, f(x, …); x is first arg, separate args follow
     * p0 - an array with initial guess
 
+I will use that function in the script.
 
 ![Figure_3](./img/Figure_3.png)
 
