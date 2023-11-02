@@ -2,6 +2,20 @@
 
 # Coding Rules
 
+* **line length should be less than 80 chars**
+    * if possible, max 72 chars.
+    * lines should be wrapped inside
+        * parentheses,
+        * brackets and
+        * braces
+    * there's also a possibility to wrap a line using a backslash '\\',  
+      but this method is *not preferred*
+    * if wrapped, the continued line should start *after* the last operator/brac/bracket,  
+      see the color arg:
+```
+        def __init__(self, width, height,
+                     color='black', emphasis=None, highlight=0)
+```
 * **No semicolon at end of line.**
 > [!NOTE]
 > The line just ends.
