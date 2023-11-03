@@ -36,6 +36,11 @@ Example:
 import scipy.io
 import mat73
 import numpy as np
+import sys
+sys.path.append("./pySmithPlot-master")
+from matplotlib import rcParams, pyplot as pp
+from smithplot import SmithAxes
+
 
 # NOTE: '/' instead of '\\'
 folder = "Z:/_Unix/scripts_und_sourcecode/matlab/20200311_test_guncal"
@@ -54,10 +59,14 @@ print(mat_dict.keys())
 
 # 420x1 complex double
 z = np.array(mat_dict["z"]).reshape(420)
-z_im = np.imag(z)
-z_re = np.real(z)
 
+rcParams.update({"legend.numpoints": 3})
+pp.figure(figsize=(6, 6))
+ax = pp.subplot(1, 1, 1, projection='smith')
+pp.plot(z, label="detuning", datatype=SmithAxes.S_PARAMETER)
+pp.show()
 ```
-tbc
+
+![Figure_4.png](./img/Figure_4.png)
 
 [back to index](Index.md)
