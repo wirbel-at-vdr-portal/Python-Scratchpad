@@ -46,6 +46,8 @@ print(dir(z_polar))
 ```
 Hmm.., this is interesting. Why the heck returned cmath.polar something like a list..?
 
+Anything else is understood. 1.41(..) is sqrt(+1 + +1); 
+
 
 
 [back to index](README.md)
