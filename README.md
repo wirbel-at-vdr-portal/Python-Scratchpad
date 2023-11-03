@@ -33,6 +33,7 @@ This is a *loooong* way and *work in progress*.
 * [Reading and writing files](FileOperations.md)
 * [built-ins](Builtins.md)
 * [Installing Packages with pip](pip.md)
+* [Complex Numbers](ComplexNumbers.md)
 * [Matplotlib](Matplotlib/Index.md)
 * [SciPy - Scientific Python](SciPy/Index.md)
 * [Practical Examples](Examples/Index.md)
