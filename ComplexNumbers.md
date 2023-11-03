@@ -35,6 +35,16 @@ The complex number *z* has those non-private functions:
 * **imag**
 * **real**
 
+* converting a kartesian complex number into polar coordinates
+```
+z_polar = cmath.polar(z)
+print(z_polar)
+# (1.4142135623730951, 0.7853981633974483)
+
+print(dir(z_polar))
+['count', 'index']
+```
+Hmm.., this is interesting. Why the heck returned cmath.polar something like a list..?
 
 
 
