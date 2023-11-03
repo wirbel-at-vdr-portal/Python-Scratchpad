@@ -42,7 +42,7 @@ from matplotlib import rcParams, pyplot as pp
 from smithplot import SmithAxes
 
 
-# NOTE: '/' instead of '\\'
+# NOTE: '/' instead of '\'
 folder = "Z:/_Unix/scripts_und_sourcecode/matlab/20200311_test_guncal"
 fname = folder + "/" + "GUN_Calibration_20200311_123946.mat"
 
