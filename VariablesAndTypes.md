@@ -510,8 +510,13 @@ Starting at 0, ending at 20, stepping by 2
     np.empty(3)
 ```
 * Subarrays of array 'x'
+> [!NOTE]
+> The returned subarray is a view rather than a copy of the array data. 
 ```
-    x[start, stop, step]
+    x[start:stop:step]
+    x[start:stop]  # step = 1
+    x[::2]         # every other element
+    x[1:2]         # as above, but starts at one
 ```
 
 
