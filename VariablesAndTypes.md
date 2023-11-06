@@ -464,6 +464,11 @@ np_weight_lbs = 2.2 * np_weight_kg
 print(np_weight_lbs)
 ```
 
+If we want to explicitly set the data type of the resulting array, we can use the **dtype** keyword:
+```
+np.array([1, 2, 3, 4], dtype='float32')
+```
+
 ## *Pandas*
 Pandas is a high-level data manipulation tool developed by Wes McKinney.  
 It is built on the Numpy package and its key data structure is called
