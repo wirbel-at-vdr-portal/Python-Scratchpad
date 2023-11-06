@@ -23,6 +23,27 @@ plt.xlim(0, 10)
 plt.show()
 ```
 
+## Polar Plots
+
+![Figure_5](./../Examples/img/Figure_5.png)
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rmax(2)
+ax.set_rticks([0.5, 1, 1.5, 2])  # Less radial ticks
+ax.set_rlabel_position(-22.5)  # Move radial labels away from plotted line
+ax.grid(True)
+
+ax.set_title("A line plot on a polar axis", va='bottom')
+plt.show()
+```
+
 ## Plotting Smith Charts
 
 Smith charts can be done using the [pySmithPlot](https://github.com/vMeijin/pySmithPlot) library, which registers a new projection type in Matplotlib.  
