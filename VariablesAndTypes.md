@@ -509,9 +509,10 @@ Starting at 0, ending at 20, stepping by 2
 ```
     np.empty(3)
 ```
-
-
-
+* Subarrays of array 'x'
+```
+    x[start, stop, step]
+```
 
 
 
