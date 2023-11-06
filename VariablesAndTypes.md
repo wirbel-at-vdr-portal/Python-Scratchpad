@@ -409,6 +409,8 @@ across entire arrays. Numpy Arrays require the use of the numpy package.
 > [!NOTE]
 > To use a numpy array as a standard python array, use the list() function.
 
+Numpy arrays can be multidimensional.
+
 ```
 # Create 2 new lists height and weight
 height = [1.87,  1.87, 1.82, 1.91, 1.90, 1.85]
