@@ -140,4 +140,23 @@ array1, array2, array3 = np.split([2, 5, 7])
 print(array1, array2, array3)
 # [1 2] [3 4 5] [6 7]
 ```
+
+To split multidimensional arrays by *columns* or *rows*, use **np.vsplit()** and **np.hsplit()**.
+
+* **Operators in Numpy**
+These ops are done on each array member:
+
+| short form | long form | comment |
+| -----------| --------- | ------- |
+| \+ 	   | np.add 	| Addition (e.g., 1 \+ 1 = 2) |
+| \- 	   | np.subtract 	| Subtraction (e.g., 3 \- 2 = 1) |
+| \- 	   | np.negative 	| Unary negation (e.g., \-2) |
+| \* 	   | np.multiply 	| Multiplication (e.g., 2 \* 3 = 6) |
+| \/ 	   | np.divide 	| Division (e.g., 3 \/ 2 = 1.5) |
+| \/\/ 	   | np.floor_divide| floor division (e.g., 3 \/\/ 2 = 1) |
+| \*\* 	   | np.power 	| Exponentiation (e.g., 2 \*\* 3 = 8) |
+| \% 	   | np.mod 	| Modulus/remainder (e.g., 9 \% 4 = 1) |
+
+
+
 [back to index](README.md)
