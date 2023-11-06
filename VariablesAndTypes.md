@@ -8,7 +8,7 @@
 |-----------------|-----------------------------------|
 | Text Type       | [str](VariablesAndTypes.md#Strings) |
 | Numeric Types   | [int, float, complex](VariablesAndTypes.md#Numbers) |
-| Sequence Types  | [list](VariablesAndTypes.md#Lists), [tuple](VariablesAndTypes.md#Tuples), [range](VariablesAndTypes.md#Range) |
+| Sequence Types  | [list](VariablesAndTypes.md#Lists), [tuple](VariablesAndTypes.md#Tuples), [range](VariablesAndTypes.md#Range), [array](VariablesAndTypes.md#Array) |
 | Mapping Type    | [dict](VariablesAndTypes.md#Dictionaries)                              |
 | Set Types       | [set](VariablesAndTypes.md#Sets), [frozenset](VariablesAndTypes.md#frozenset) |
 | Boolean Type    | [bool](VariablesAndTypes.md#Boolean)                              |
@@ -64,7 +64,7 @@ mystring = 'hello'
 mystring = "hello"
 ```
 ## *Lists*
-Lists are arrays, for which all items have the same type.
+Lists are multi-element containers, for which the items may have the same type. But - this not required.
 
 * empty list
 ```
@@ -76,6 +76,7 @@ mylist = []
 even_numbers = [2,4,6,8]
 odd_numbers = [1,3,5,7]
 x_list = [x] * 10   # [x,x,..,x]
+L3 = [True, "2", 3.0, 4] # yes, this is allowed.
 ```
 * lists can be added by '+'
 ```
@@ -119,6 +120,17 @@ for x in mylist:
 | *remove()*  | Removes the first item with the specified value                              |
 | *reverse()* | Reverses the order of the list                                               |
 | *sort()*    | Sorts the list                                                               |
+
+## *Array*
+Arrays are fixed type containers.
+```
+import array
+L = list(range(10))
+A = array.array('i', L)
+A
+# array('i', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+```
+Here 'i' is a type code indicating the contents are integers.
 
 ## *Range*
 **range()**  generates a sequence of ordered integers by defining a start and end point of the range.  
