@@ -68,29 +68,28 @@ If we want to explicitly set the data type of the resulting array, we can use th
 np.array([1, 2, 3, 4], dtype='float32')
 ```
 
-* Create a length-10 integer array filled with zeros
+* Create a length-10 integer **array filled with zeros**
 ```
 np.zeros(10, dtype=int)
 ```
-* Create a 3x5 floating-point array filled with ones
+* Create a 3x5 floating-point **array filled with ones**
 ```
 np.ones((3, 5), dtype=float)
 ```
-* Create a 3x5 array filled with 3.14
+* Create a 3x5 **array filled with 3.14**
 ```
 np.full((3, 5), 3.14)
 ```
-* Create an array filled with a linear sequence
-Starting at 0, ending at 20, stepping by 2
+* Create an array filled with a **linear sequence** Starting at 0, ending at 20, stepping by 2
 (this is similar to the built-in range() function)
 ```
 np.arange(0, 20, 2)
 ```
-* Create an array of five values evenly spaced between 0 and 1
+* Create an array of **five values evenly spaced** between 0 and 1
 ```
 np.linspace(0, 1, 5)
 ```
-* Create a 3x3 array of uniformly distributed random values between 0 and 1
+* Create a 3x3 array of uniformly distributed **random values between 0 and 1**
 ```
 np.random.random((3, 3))
 ```
@@ -102,11 +101,11 @@ np.random.normal(0, 1, (3, 3))
 ```
 np.random.randint(0, 10, (3, 3))
 ```
-* Create an uninitialized array of three integers
+* Create an **uninitialized array** of three integers
 ```
 np.empty(3)
 ```
-* Subarrays of array 'x'
+* **Subarrays** of array 'x'
 > [!NOTE]
 > The returned subarray is a view rather than a copy of the array data. 
 ```
@@ -115,11 +114,11 @@ x[start:stop]  # step = 1
 x[::2]         # every other element
 x[1:2]         # as above, but starts at one
 ```
-* Changing the number of rows or columns by reshaping an array
+* Changing the number of rows or columns by **reshaping** an array
 ```
 x.reshape((3, 1))
 ```
-* Concatenating several arrays into one array
+* **Concatenating several arrays** into one array
 ```
 import numpy as np
 
@@ -130,7 +129,7 @@ array3 = np.array([7, 8, 9])
 print(np.concatenate([array1, array2, array3]))
 # [1 2 3 4 5 6 7 8 9]
 ```
-* Splitting of arrays
+* **Splitting of arrays**
 
 If splitting an array with **N** points, **N+1** subarrays are generated.
 ```
