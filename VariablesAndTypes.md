@@ -518,8 +518,10 @@ Starting at 0, ending at 20, stepping by 2
     x[::2]         # every other element
     x[1:2]         # as above, but starts at one
 ```
-
-
+* Changing the number of rows or columns by reshaping an array
+```
+    x.reshape((3, 1))
+```
 
 
 
