@@ -29,7 +29,7 @@ Smith charts can be done using the [pySmithPlot](https://github.com/vMeijin/pySm
 However, this library doesn't seem to be maintained any longer, so i use [my own fork with fixes to this lib](https://github.com/wirbel-at-vdr-portal/pySmithPlot).
 
 
-[Figure_4](./Examples/img/Figure_4.png)
+[Figure_4](../Examples/img/Figure_4.png)
 
 ```
 pp.figure(figsize=(6, 6))
