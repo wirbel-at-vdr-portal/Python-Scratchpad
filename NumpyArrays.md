@@ -157,6 +157,21 @@ These ops are done on each array member:
 | \*\* 	   | np.power 	| Exponentiation (e.g., 2 \*\* 3 = 8) |
 | \% 	   | np.mod 	| Modulus/remainder (e.g., 9 \% 4 = 1) |
 
+* np.abs() absolute value
+* np.linspace(From, To, Count)
+* np.sin(), np.cos(), np.tan
+* np.arcsin(), np.arccos(), np.arctan
+* np.exp(x), f(x) = 2.718^x
+* np.exp2(x), f(x) = 2^x
+* np.power(base,exp)
+* ln(x), log2(), log10()
 
+All of these *ufuncs* accept an *out = ..* param, such thta direct on this memory may be written.
+```
+x = np.arange(5)
+y = np.empty(5)
+np.multiply(x, 10, out=y)
+print(y)
+```
 
 [back to index](README.md)
