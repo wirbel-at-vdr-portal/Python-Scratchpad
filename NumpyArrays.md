@@ -174,4 +174,19 @@ np.multiply(x, 10, out=y)
 print(y)
 ```
 
+* **reduce**
+A reduce repeatedly applies a given operation to the elements of an array until only a single result remains.
+Binary ufuncs usually support this.
+
+Adding or multiplying all items into one number:
+```
+x = np.arange(1, 6)
+np.add.reduce(x)
+# 15
+
+np.multiply.reduce(np.arange(1, 6))
+# 120
+```
+
+
 [back to index](README.md)
