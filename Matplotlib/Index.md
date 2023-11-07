@@ -59,7 +59,24 @@ pp.plot(z, label="detuning", datatype=SmithAxes.S_PARAMETER)
 pp.show()
 ```
 
+## Display 2D array data or fucntions as an image, i.e., on a 2D regular raster.
 
+![Figure_6](./../Examples/img/Figure_6.png)
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+# x and y have 50 steps from 0 to 5
+x = np.linspace(0, 5, 50)
+y = np.linspace(0, 5, 50)[:, np.newaxis]
+
+z = np.sin(x) ** 10*np.sin(y) + np.cos(np.pi * y * x) * np.cos(x)
+
+plt.imshow(z, origin='lower', extent=[0, 5, 0, 5], cmap='viridis', interpolation='bicubic')
+plt.colorbar()
+plt.show()
+```
 
 
 [back to index](../README.md)
